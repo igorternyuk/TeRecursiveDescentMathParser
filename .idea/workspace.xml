@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7c2b4e7a-9457-4da6-88dc-8d93f23933c6" name="Default" comment="" />
+    <list default="true" id="7c2b4e7a-9457-4da6-88dc-8d93f23933c6" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TeRecursiveDescentParser/com/recursivedescentmathparser/Expression.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TeRecursiveDescentParser/com/recursivedescentmathparser/MathParser.class" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/recursivedescentmathparser/Expression.java" afterPath="$PROJECT_DIR$/src/com/recursivedescentmathparser/parser/Expression.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/recursivedescentmathparser/MathParser.java" afterPath="$PROJECT_DIR$/src/com/recursivedescentmathparser/parser/MathParser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TeRecursiveDescentParser/com/recursivedescentmathparser/Main.class" afterPath="$PROJECT_DIR$/out/production/TeRecursiveDescentParser/com/recursivedescentmathparser/Main.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TeRecursiveDescentParser/com/recursivedescentmathparser/tests/MathParserTest.class" afterPath="$PROJECT_DIR$/out/production/TeRecursiveDescentParser/com/recursivedescentmathparser/tests/MathParserTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/recursivedescentmathparser/Main.java" afterPath="$PROJECT_DIR$/src/com/recursivedescentmathparser/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/recursivedescentmathparser/tests/MathParserTest.java" afterPath="$PROJECT_DIR$/src/com/recursivedescentmathparser/tests/MathParserTest.java" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,8 +28,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/recursivedescentmathparser/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="22" lean-forward="true" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="27" />
+            <state relative-caret-position="135">
+              <caret line="10" column="43" lean-forward="false" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -26,36 +38,40 @@
         </entry>
       </file>
       <file leaf-file-name="Expression.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/recursivedescentmathparser/Expression.java">
+        <entry file="file://$PROJECT_DIR$/src/com/recursivedescentmathparser/parser/Expression.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="10" lean-forward="false" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+            <state relative-caret-position="90">
+              <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MathParser.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/recursivedescentmathparser/MathParser.java">
+      <file leaf-file-name="MathParser.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/recursivedescentmathparser/parser/MathParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="14" lean-forward="false" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+            <state relative-caret-position="1719">
+              <caret line="298" column="17" lean-forward="false" selection-start-line="298" selection-start-column="17" selection-end-line="298" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#4295#4296#0" expanded="true" />
-                <element signature="e#4370#4371#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MathParserTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MathParserTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/recursivedescentmathparser/tests/MathParserTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="945">
-              <caret line="63" column="43" lean-forward="true" selection-start-line="63" selection-start-column="43" selection-end-line="63" selection-end-column="43" />
+            <state relative-caret-position="150">
+              <caret line="16" column="30" lean-forward="false" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#429#430#0" expanded="true" />
+                <element signature="e#470#471#0" expanded="true" />
+                <element signature="e#510#511#0" expanded="true" />
+                <element signature="e#576#577#0" expanded="true" />
+                <element signature="e#10574#10575#0" expanded="true" />
+                <element signature="e#10662#10663#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -72,6 +88,15 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>square</find>
+      <find>result</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
       <projects_view />
@@ -83,6 +108,7 @@
         <option value="$PROJECT_DIR$/src/com/recursivedescentmathparser/Expression.java" />
         <option value="$PROJECT_DIR$/src/com/recursivedescentmathparser/Main.java" />
         <option value="$PROJECT_DIR$/src/com/recursivedescentmathparser/MathParser.java" />
+        <option value="$PROJECT_DIR$/src/com/recursivedescentmathparser/parser/MathParser.java" />
         <option value="$PROJECT_DIR$/src/com/recursivedescentmathparser/tests/MathParserTest.java" />
       </list>
     </option>
@@ -98,6 +124,7 @@
     <option name="width" value="1286" />
     <option name="height" value="769" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -113,7 +140,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -176,10 +203,32 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TeRecursiveDescentParser" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TeRecursiveDescentParser" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="recursivedescentmathparser" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="parser" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -213,99 +262,108 @@
     </option>
   </component>
   <component name="RunManager" selected="JUnit.MathParserTest">
-    <configuration default="false" name="MathParserTest.trigonometricExpressionsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="MathParserTest.hyperbolicArcFunctionsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.recursivedescentmathparser.tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <module name="TeRecursiceDescentParser" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.recursivedescentmathparser.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.recursivedescentmathparser.tests.MathParserTest" />
-      <option name="METHOD_NAME" value="trigonometricExpressionsTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="MathParserTest.testParserWithVariables" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.recursivedescentmathparser.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="TeRecursiceDescentParser" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.recursivedescentmathparser.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.recursivedescentmathparser.tests.MathParserTest" />
-      <option name="METHOD_NAME" value="testParserWithVariables" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="MathParserTest.functionsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.recursivedescentmathparser.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="TeRecursiceDescentParser" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.recursivedescentmathparser.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.recursivedescentmathparser.tests.MathParserTest" />
-      <option name="METHOD_NAME" value="functionsTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="Main" type="Application" factoryName="Application" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="com.recursivedescentmathparser.Main" />
-      <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
       <module name="TeRecursiveDescentParser" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.recursivedescentmathparser.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.recursivedescentmathparser.tests.MathParserTest" />
+      <option name="METHOD_NAME" value="hyperbolicArcFunctionsTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
       <envs />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="MathParserTest.trigonometricFunctionsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.recursivedescentmathparser.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="TeRecursiveDescentParser" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.recursivedescentmathparser.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.recursivedescentmathparser.tests.MathParserTest" />
+      <option name="METHOD_NAME" value="trigonometricFunctionsTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="MathParserTest.logicalExpressionsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.recursivedescentmathparser.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="TeRecursiveDescentParser" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.recursivedescentmathparser.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.recursivedescentmathparser.tests.MathParserTest" />
+      <option name="METHOD_NAME" value="logicalExpressionsTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="MathParserTest.logicalOperatorsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.recursivedescentmathparser.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="TeRecursiveDescentParser" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.recursivedescentmathparser.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.recursivedescentmathparser.tests.MathParserTest" />
+      <option name="METHOD_NAME" value="logicalOperatorsTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
       <method />
     </configuration>
     <configuration default="false" name="MathParserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
@@ -320,11 +378,11 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.recursivedescentmathparser.tests" />
       <option name="MAIN_CLASS_NAME" value="com.recursivedescentmathparser.tests.MathParserTest" />
-      <option name="METHOD_NAME" value="" />
+      <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="" />
-      <option name="PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
@@ -699,19 +757,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.MathParserTest.trigonometricExpressionsTest" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.MathParserTest.testParserWithVariables" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.MathParserTest.functionsTest" />
-      <item index="3" class="java.lang.String" itemvalue="Application.Main" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.MathParserTest.hyperbolicArcFunctionsTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.MathParserTest.trigonometricFunctionsTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.MathParserTest.logicalExpressionsTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.MathParserTest.logicalOperatorsTest" />
       <item index="4" class="java.lang.String" itemvalue="JUnit.MathParserTest" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="JUnit.MathParserTest" />
-        <item index="1" class="java.lang.String" itemvalue="Application.Main" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.MathParserTest.functionsTest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.MathParserTest.trigonometricExpressionsTest" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.MathParserTest.testParserWithVariables" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.MathParserTest.logicalOperatorsTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.MathParserTest.logicalExpressionsTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.MathParserTest.hyperbolicArcFunctionsTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.MathParserTest.trigonometricFunctionsTest" />
       </list>
     </recent_temporary>
   </component>
@@ -729,44 +787,47 @@
       <workItem from="1520605825709" duration="3135000" />
       <workItem from="1520664739649" duration="19228000" />
       <workItem from="1520748342363" duration="15115000" />
-      <workItem from="1520766011780" duration="963000" />
+      <workItem from="1520766011780" duration="1730000" />
+      <workItem from="1520775179140" duration="1879000" />
+      <workItem from="1520836086469" duration="17494000" />
+      <workItem from="1520866267799" duration="59000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MathParserTest - 2018.03.11 at 13h 14m 53s.xml">
+    <history-entry file="MathParserTest - 2018.03.12 at 12h 43m 20s.xml">
       <configuration name="MathParserTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MathParserTest - 2018.03.11 at 13h 15m 42s.xml">
+    <history-entry file="MathParserTest - 2018.03.12 at 12h 51m 09s.xml">
       <configuration name="MathParserTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MathParserTest_testParserWithVariables - 2018.03.11 at 11h 08m 08s.xml">
-      <configuration name="MathParserTest.testParserWithVariables" configurationId="JUnit" />
+    <history-entry file="MathParserTest - 2018.03.12 at 12h 55m 19s.xml">
+      <configuration name="MathParserTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MathParserTest_testParserWithVariables - 2018.03.11 at 11h 36m 38s.xml">
-      <configuration name="MathParserTest.testParserWithVariables" configurationId="JUnit" />
+    <history-entry file="MathParserTest - 2018.03.12 at 13h 08m 56s.xml">
+      <configuration name="MathParserTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MathParserTest_testParserWithVariables - 2018.03.11 at 11h 40m 34s.xml">
-      <configuration name="MathParserTest.testParserWithVariables" configurationId="JUnit" />
+    <history-entry file="MathParserTest_logicalOperatorsTest - 2018.03.12 at 12h 34m 58s.xml">
+      <configuration name="MathParserTest.logicalOperatorsTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MathParserTest_trigonometricExpressionsTest - 2018.03.11 at 11h 05m 41s.xml">
-      <configuration name="MathParserTest.trigonometricExpressionsTest" configurationId="JUnit" />
+    <history-entry file="MathParserTest_logicalOperatorsTest - 2018.03.12 at 12h 36m 29s.xml">
+      <configuration name="MathParserTest.logicalOperatorsTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MathParserTest_trigonometricExpressionsTest - 2018.03.11 at 11h 06m 23s.xml">
-      <configuration name="MathParserTest.trigonometricExpressionsTest" configurationId="JUnit" />
+    <history-entry file="MathParserTest_logicalOperatorsTest - 2018.03.12 at 12h 41m 26s.xml">
+      <configuration name="MathParserTest.logicalOperatorsTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MathParserTest_trigonometricExpressionsTest - 2018.03.11 at 11h 36m 51s.xml">
-      <configuration name="MathParserTest.trigonometricExpressionsTest" configurationId="JUnit" />
+    <history-entry file="MathParserTest_logicalOperatorsTest - 2018.03.12 at 12h 46m 36s.xml">
+      <configuration name="MathParserTest.logicalOperatorsTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MathParserTest_trigonometricExpressionsTest - 2018.03.11 at 11h 37m 28s.xml">
-      <configuration name="MathParserTest.trigonometricExpressionsTest" configurationId="JUnit" />
+    <history-entry file="MathParserTest_logicalOperatorsTest - 2018.03.12 at 12h 48m 24s.xml">
+      <configuration name="MathParserTest.logicalOperatorsTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MathParserTest_trigonometricExpressionsTest - 2018.03.11 at 11h 49m 42s.xml">
-      <configuration name="MathParserTest.trigonometricExpressionsTest" configurationId="JUnit" />
+    <history-entry file="MathParserTest_logicalOperatorsTest - 2018.03.12 at 12h 50m 50s.xml">
+      <configuration name="MathParserTest.logicalOperatorsTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39635000" />
+    <option name="totallyTimeSpent" value="59834000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="0" width="1286" height="769" extended-state="6" />
@@ -775,19 +836,18 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35030866" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3477589" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24959612" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2003231" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -799,6 +859,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32766616" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -811,15 +872,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/recursivedescentmathparser/MathParser.java</url>
-          <line>138</line>
-          <properties />
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="11" />
+      <option name="time" value="14" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
@@ -840,6 +893,138 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/recursivedescentmathparser/Main.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="10" column="43" lean-forward="false" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/recursivedescentmathparser/parser/Expression.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/recursivedescentmathparser/tests/MathParserTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="30" lean-forward="true" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#429#430#0" expanded="true" />
+            <element signature="e#470#471#0" expanded="true" />
+            <element signature="e#510#511#0" expanded="true" />
+            <element signature="e#576#577#0" expanded="true" />
+            <element signature="e#10574#10575#0" expanded="true" />
+            <element signature="e#10662#10663#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/recursivedescentmathparser/parser/MathParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4425">
+          <caret line="295" column="0" lean-forward="false" selection-start-line="295" selection-start-column="0" selection-end-line="295" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/recursivedescentmathparser/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="8" column="22" lean-forward="false" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/recursivedescentmathparser/parser/Expression.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="10" lean-forward="false" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/recursivedescentmathparser/parser/MathParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1110">
+          <caret line="74" column="56" lean-forward="false" selection-start-line="74" selection-start-column="56" selection-end-line="74" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/recursivedescentmathparser/tests/MathParserTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#429#430#0" expanded="true" />
+            <element signature="e#470#471#0" expanded="true" />
+            <element signature="e#510#511#0" expanded="true" />
+            <element signature="e#576#577#0" expanded="true" />
+            <element signature="e#10574#10575#0" expanded="true" />
+            <element signature="e#10662#10663#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/recursivedescentmathparser/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="8" column="22" lean-forward="false" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/recursivedescentmathparser/parser/Expression.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="10" lean-forward="false" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/recursivedescentmathparser/tests/MathParserTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="945">
+          <caret line="63" column="43" lean-forward="true" selection-start-line="63" selection-start-column="43" selection-end-line="63" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#429#430#0" expanded="true" />
+            <element signature="e#470#471#0" expanded="true" />
+            <element signature="e#510#511#0" expanded="true" />
+            <element signature="e#576#577#0" expanded="true" />
+            <element signature="e#10574#10575#0" expanded="true" />
+            <element signature="e#10662#10663#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/recursivedescentmathparser/parser/MathParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1155">
+          <caret line="77" column="60" lean-forward="true" selection-start-line="77" selection-start-column="60" selection-end-line="77" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/recursivedescentmathparser/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="25" column="29" lean-forward="false" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
           <folding>
@@ -854,18 +1039,22 @@
           <caret line="49" column="79" lean-forward="false" selection-start-line="49" selection-start-column="79" selection-end-line="49" selection-end-column="79" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#429#430#0" expanded="true" />
+            <element signature="e#470#471#0" expanded="true" />
+            <element signature="e#510#511#0" expanded="true" />
+            <element signature="e#576#577#0" expanded="true" />
+            <element signature="e#10574#10575#0" expanded="true" />
+            <element signature="e#10662#10663#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/recursivedescentmathparser/MathParser.java">
+    <entry file="file://$PROJECT_DIR$/src/com/recursivedescentmathparser/parser/MathParser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1590">
           <caret line="106" column="68" lean-forward="true" selection-start-line="106" selection-start-column="68" selection-end-line="106" selection-end-column="68" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4295#4296#0" expanded="true" />
-            <element signature="e#4370#4371#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -880,19 +1069,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/recursivedescentmathparser/MathParser.java">
+    <entry file="file://$PROJECT_DIR$/src/com/recursivedescentmathparser/parser/MathParser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2145">
           <caret line="143" column="0" lean-forward="false" selection-start-line="143" selection-start-column="0" selection-end-line="143" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4295#4296#0" expanded="true" />
-            <element signature="e#4370#4371#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/recursivedescentmathparser/Expression.java">
+    <entry file="file://$PROJECT_DIR$/src/com/recursivedescentmathparser/parser/Expression.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="10" lean-forward="false" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
@@ -906,6 +1093,12 @@
           <caret line="25" column="82" lean-forward="true" selection-start-line="25" selection-start-column="82" selection-end-line="25" selection-end-column="82" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#429#430#0" expanded="true" />
+            <element signature="e#470#471#0" expanded="true" />
+            <element signature="e#510#511#0" expanded="true" />
+            <element signature="e#576#577#0" expanded="true" />
+            <element signature="e#10574#10575#0" expanded="true" />
+            <element signature="e#10662#10663#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -920,7 +1113,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/recursivedescentmathparser/Expression.java">
+    <entry file="file://$PROJECT_DIR$/src/com/recursivedescentmathparser/parser/Expression.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="17" lean-forward="true" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
@@ -928,14 +1121,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/recursivedescentmathparser/MathParser.java">
+    <entry file="file://$PROJECT_DIR$/src/com/recursivedescentmathparser/parser/MathParser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="19" column="21" lean-forward="false" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4295#4296#0" expanded="true" />
-            <element signature="e#4370#4371#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -950,14 +1141,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/recursivedescentmathparser/MathParser.java">
+    <entry file="file://$PROJECT_DIR$/src/com/recursivedescentmathparser/parser/MathParser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1815">
           <caret line="123" column="290" lean-forward="false" selection-start-line="123" selection-start-column="290" selection-end-line="123" selection-end-column="290" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4295#4296#0" expanded="true" />
-            <element signature="e#4370#4371#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -969,17 +1158,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/lang/Math.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="138" column="27" lean-forward="true" selection-start-line="138" selection-start-column="27" selection-end-line="138" selection-end-column="27" />
-          <folding>
-            <element signature="e#5367#5368#0" expanded="false" />
-            <element signature="e#5448#5449#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/util/Map.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="490">
@@ -988,40 +1166,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/recursivedescentmathparser/Expression.java">
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/Assert.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="10" lean-forward="false" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+        <state relative-caret-position="424">
+          <caret line="352" column="27" lean-forward="false" selection-start-line="352" selection-start-column="27" selection-end-line="352" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/lang/Math.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="918">
+          <caret line="1670" column="25" lean-forward="false" selection-start-line="1670" selection-start-column="25" selection-end-line="1670" selection-end-column="25" />
+          <folding>
+            <element signature="e#64310#64311#0" expanded="false" />
+            <element signature="e#64355#64356#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/recursivedescentmathparser/parser/Expression.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/recursivedescentmathparser/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="22" lean-forward="true" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="27" />
+        <state relative-caret-position="135">
+          <caret line="10" column="43" lean-forward="false" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/recursivedescentmathparser/MathParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="14" lean-forward="false" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#4295#4296#0" expanded="true" />
-            <element signature="e#4370#4371#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/recursivedescentmathparser/tests/MathParserTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="945">
-          <caret line="63" column="43" lean-forward="true" selection-start-line="63" selection-start-column="43" selection-end-line="63" selection-end-column="43" />
+        <state relative-caret-position="150">
+          <caret line="16" column="30" lean-forward="false" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#429#430#0" expanded="true" />
+            <element signature="e#470#471#0" expanded="true" />
+            <element signature="e#510#511#0" expanded="true" />
+            <element signature="e#576#577#0" expanded="true" />
+            <element signature="e#10574#10575#0" expanded="true" />
+            <element signature="e#10662#10663#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/recursivedescentmathparser/parser/MathParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1719">
+          <caret line="298" column="17" lean-forward="false" selection-start-line="298" selection-start-column="17" selection-end-line="298" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

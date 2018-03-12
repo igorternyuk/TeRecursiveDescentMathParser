@@ -1,8 +1,7 @@
 package com.recursivedescentmathparser;
 
-import java.util.Map;
-import java.util.HashMap;
-import java.util.function.Function;
+import com.recursivedescentmathparser.parser.Expression;
+import com.recursivedescentmathparser.parser.MathParser;
 
 public class Main {
 

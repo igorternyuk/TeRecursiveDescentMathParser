@@ -1,4 +1,4 @@
-package com.recursivedescentmathparser;
+package com.recursivedescentmathparser.parser;
 
 /**
  * Created by igor on 09.03.18.
