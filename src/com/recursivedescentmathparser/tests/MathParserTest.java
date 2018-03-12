@@ -2,11 +2,10 @@ package com.recursivedescentmathparser.tests;
 
 import com.recursivedescentmathparser.parser.Expression;
 import com.recursivedescentmathparser.parser.MathParser;
-
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 /**
  * Created by igor on 10.03.18.
@@ -28,10 +27,11 @@ public class MathParserTest {
 
     @Test
     public void unaryOperatorsTest() {
-        assertEquals(-0, parser.parse("-0").evaluate(), EPS);
-        assertEquals(+0, parser.parse("+0").evaluate(), EPS);
+        assertEquals(0, parser.parse("-0").evaluate(), EPS);
+        assertEquals(0, parser.parse("+0").evaluate(), EPS);
         assertEquals(-5, parser.parse("-5").evaluate(), EPS);
-        assertEquals(+5, parser.parse("+5").evaluate(), EPS);
+        assertEquals(5, parser.parse("+5").evaluate(), EPS);
+        assertEquals(4, parser.parse("+++4").evaluate(), EPS);
     }
 
     @Test
@@ -222,8 +222,19 @@ public class MathParserTest {
     }
 
     @Test
+    public void biFunctionsTest() {
+        assertEquals(5.0, parser.parse("max(5,2)").evaluate(), EPS);
+        assertEquals(-57.0, parser.parse("min(-57,100)").evaluate(), EPS);
+        assertEquals(5.0, parser.parse("hypot(3,4)").evaluate(), EPS);
+        assertEquals(2.0, parser.parse("log(49,7)").evaluate(), EPS);
+        assertEquals(5.0, parser.parse("max((2+3),(2+2))").evaluate(), EPS);
+        assertEquals(Math.sin(Math.PI / 3), parser.parse("max(sin(Pi/6),sin(Pi/3))").evaluate(), EPS);
+    }
+
+    @Test
     public void logicalExpressionsTest() {
         assertEquals(108.0, parser.parse("(5!=7)*8+(9<14)*100").evaluate(), EPS);
+        assertEquals(209.0, parser.parse("(100>=70)*9+(500<=3999)*200").evaluate(), EPS);
     }
 
     @Test
@@ -248,6 +259,5 @@ public class MathParserTest {
             assertEquals(Math.sin(Math.toRadians(angle)), sine.evaluate(), EPS);
             assertEquals(Math.cos(Math.toRadians(angle)), cosine.evaluate(), EPS);
         }
-
     }
 }

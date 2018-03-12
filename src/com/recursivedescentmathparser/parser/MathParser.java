@@ -1,10 +1,10 @@
 package com.recursivedescentmathparser.parser;
 
-import java.util.Map;
+import java.util.Collections;
 import java.util.HashMap;
+import java.util.Map;
 import java.util.function.BiFunction;
 import java.util.function.Function;
-import java.util.Collections;
 
 /**
  * Created by igor on 09.03.18.
@@ -12,6 +12,17 @@ import java.util.Collections;
 public class MathParser {
     private final Map<String, Function<Double,Double>> functions = createFunctionsMap();
     private final Map<String, BiFunction<Double,Double,Double>> binaryOperatorsMap = createBinaryOperatorsMap();
+    private final Map<String, BiFunction<Double, Double, Double>> biFunctionsMap = createBiFunctionsMap();
+
+    private Map<String, BiFunction<Double, Double, Double>> createBiFunctionsMap() {
+        Map<String, BiFunction<Double, Double, Double>> map = new HashMap<>();
+        map.put("max", (a, b) -> Math.max(a, b));
+        map.put("min", (a, b) -> Math.min(a, b));
+        map.put("hypot", (a, b) -> Math.hypot(a, b));
+        map.put("log", (a, b) -> Math.log(a) / Math.log(b));
+        return map;
+    }
+
     private final Map<String, Double> variables = new HashMap<>();
     private String inputExpression;
     int currentPosition = -1, currentCharacter;
@@ -200,33 +211,33 @@ public class MathParser {
     }
 
     private Expression parseExpression(){
-        Expression x = this.parseHighPriorityOperators();
+        Expression currExpr = this.parseHighPriorityOperators();
         for(;;){
-            final double evalX = x.evaluate();
+            final double evalCurrExpr = currExpr.evaluate();
             if(consume('+')){
                 Expression b = this.parseHighPriorityOperators();
-                x = (() -> evalX + b.evaluate());
+                currExpr = (() -> evalCurrExpr + b.evaluate());
             } else if(consume('-')){
                 Expression b = this.parseHighPriorityOperators();
-                x = (() -> evalX - b.evaluate());
+                currExpr = (() -> evalCurrExpr - b.evaluate());
             } else {
-                return x;
+                return currExpr;
             }
         }
     }
 
     private Expression parseHighPriorityOperators(){
-        Expression x = this.parseToken();
+        Expression currExpr = this.parseToken();
         for (;;){
-            final double evalX = x.evaluate();
+            final double evalCurrExpr = currExpr.evaluate();
             if(consume('*')){
                 Expression b = this.parseToken();
-                x = (() -> evalX * b.evaluate());
+                currExpr = (() -> evalCurrExpr * b.evaluate());
             } else if(consume('/')){
                 Expression b = this.parseToken();
-                x = (() -> evalX / b.evaluate());
+                currExpr = (() -> evalCurrExpr / b.evaluate());
             } else {
-                return x;
+                return currExpr;
             }
         }
     }
@@ -241,9 +252,12 @@ public class MathParser {
         }
         Expression res;
         int startPosition = this.currentPosition;
-        if(consume('(')){
+        if (consume('(') || consume(',')) {
             res = this.parseExpression();
-            if(!consume(')')) throw new RuntimeException("Unbalanced parentheses");
+            if (consume(',')) return res;
+            if (!consume(')')) {
+                throw new RuntimeException("Unbalanced parentheses");
+            }
         } else if(isDigit(this.currentCharacter)){
             while (isDigit(this.currentCharacter)) nextCharacter();
             //System.out.println("startPosition = " + startPosition + " this.currentPosition = " + this.currentPosition);
@@ -269,15 +283,33 @@ public class MathParser {
                 res = this.parseToken();
                 final Expression x = res;
                 boolean wasFunctionFound = false;
+                String foundedFuncKey = "";
                 for (Map.Entry<String, Function<Double,Double>> entry: functions.entrySet()){
                     if(entry.getKey().equals(func)){
-                        res = () -> entry.getValue().apply(x.evaluate());
+                        foundedFuncKey = entry.getKey();
                         wasFunctionFound = true;
                         break;
                     }
                 }
-                if(!wasFunctionFound){
-                    throw new RuntimeException("Unknown function or variable " + func);
+                if (wasFunctionFound) {
+                    String key = foundedFuncKey;
+                    res = () -> this.functions.get(key).apply(x.evaluate());
+                } else {
+                    boolean isBiFunctionFound = false;
+                    for (Map.Entry<String, BiFunction<Double, Double, Double>> entry : this.biFunctionsMap.entrySet()) {
+                        if (entry.getKey().equals(func)) {
+                            isBiFunctionFound = true;
+                            Expression a = res;
+                            Expression b = this.parseExpression();
+                            if (!consume(')'))
+                                throw new RuntimeException("Missing ) after biFunction second argument");
+                            res = () -> entry.getValue().apply(a.evaluate(), b.evaluate());
+                            break;
+                        }
+                    }
+                    if (!isBiFunctionFound) {
+                        throw new RuntimeException("Unknown function or variable " + func);
+                    }
                 }
             }
         } else {
