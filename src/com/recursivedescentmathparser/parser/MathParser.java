@@ -13,19 +13,9 @@ public class MathParser {
     private final Map<String, Function<Double,Double>> functions = createFunctionsMap();
     private final Map<String, BiFunction<Double,Double,Double>> binaryOperatorsMap = createBinaryOperatorsMap();
     private final Map<String, BiFunction<Double, Double, Double>> biFunctionsMap = createBiFunctionsMap();
-
-    private Map<String, BiFunction<Double, Double, Double>> createBiFunctionsMap() {
-        Map<String, BiFunction<Double, Double, Double>> map = new HashMap<>();
-        map.put("max", (a, b) -> Math.max(a, b));
-        map.put("min", (a, b) -> Math.min(a, b));
-        map.put("hypot", (a, b) -> Math.hypot(a, b));
-        map.put("log", (a, b) -> Math.log(a) / Math.log(b));
-        return map;
-    }
-
     private final Map<String, Double> variables = new HashMap<>();
     private String inputExpression;
-    int currentPosition = -1, currentCharacter;
+    private int currentPosition = -1, currentCharacter;
 
     public MathParser(){
         this.addConstantsToVariableMap();
@@ -100,50 +90,49 @@ public class MathParser {
 
     private static Map<String, Function<Double,Double>> createFunctionsMap(){
         Map<String, Function<Double,Double>> functionsMap = new HashMap<>();
-        functionsMap.put("sin", arg -> Math.sin(arg));
-        functionsMap.put("cos", arg -> Math.cos(arg));
-        functionsMap.put("tg", arg -> Math.tan(arg));
+        functionsMap.put("sin", Math::sin);
+        functionsMap.put("cos", Math::cos);
+        functionsMap.put("tg", Math::tan);
         functionsMap.put("ctg", arg -> 1.0 / Math.tan(arg));
         functionsMap.put("sec", arg -> 1.0 / Math.sin(arg));
         functionsMap.put("cosec", arg -> 1.0 / Math.cos(arg));
-        functionsMap.put("arcsin", arg -> Math.asin(arg));
-        functionsMap.put("arccos", arg -> Math.acos(arg));
-        functionsMap.put("arctg", arg -> Math.atan(arg));
+        functionsMap.put("arcsin", Math::asin);
+        functionsMap.put("arccos", Math::acos);
+        functionsMap.put("arctg", Math::atan);
         functionsMap.put("arcsec", arg -> Math.asin(1 / arg));
         functionsMap.put("arccosec", arg -> Math.acos(1 / arg));
         functionsMap.put("arcctg", arg -> Math.atan(1 / arg));
-        functionsMap.put("sh", arg -> Math.sinh(arg));
-        functionsMap.put("ch", arg -> Math.cosh(arg));
-        functionsMap.put("th", arg -> Math.tanh(arg));
+        functionsMap.put("sh", Math::sinh);
+        functionsMap.put("ch", Math::cosh);
+        functionsMap.put("th", Math::tanh);
         functionsMap.put("cth", arg -> 1.0 / Math.tanh(arg));
         functionsMap.put("sech", arg -> 1.0 / Math.sinh(arg));
         functionsMap.put("cosech", arg -> 1.0 / Math.cosh(arg));
-        functionsMap.put("arcsh", arg -> asinh(arg));
-        functionsMap.put("arcch", arg -> acosh(arg));
-        functionsMap.put("arcth", arg -> atanh(arg));
+        functionsMap.put("arcsh", MathParser::asinh);
+        functionsMap.put("arcch", MathParser::acosh);
+        functionsMap.put("arcth", MathParser::atanh);
         functionsMap.put("arcsech", arg -> asinh(1 / arg));
         functionsMap.put("arccosech", arg -> acosh(1 / arg));
         functionsMap.put("arccth", arg -> atanh(1 / arg));
         functionsMap.put("sqr", arg -> arg * arg);
         functionsMap.put("cube", arg -> arg * arg * arg);
-        functionsMap.put("sqrt", arg -> Math.sqrt(arg));
-        functionsMap.put("cbrt", arg -> Math.cbrt(arg));
-        functionsMap.put("signum", arg -> Math.signum(arg));
-        functionsMap.put("abs", arg -> Math.abs(arg));
-        functionsMap.put("sin", arg -> Math.sin(arg));
-        functionsMap.put("exp", arg -> Math.exp(arg));
-        functionsMap.put("ln", arg -> Math.log(arg));
+        functionsMap.put("sqrt", Math::sqrt);
+        functionsMap.put("cbrt", Math::cbrt);
+        functionsMap.put("signum", Math::signum);
+        functionsMap.put("abs", Math::abs);
+        functionsMap.put("exp", Math::exp);
+        functionsMap.put("ln", Math::log);
         functionsMap.put("log2", arg -> Math.log10(arg) / Math.log10(2));
         functionsMap.put("log4", arg -> Math.log10(arg) / Math.log10(4));
         functionsMap.put("log8", arg -> Math.log10(arg) / Math.log10(8));
-        functionsMap.put("log10", arg -> Math.log10(arg));
+        functionsMap.put("log10", Math::log10);
         functionsMap.put("log16", arg -> Math.log10(arg) / Math.log10(16));
         return functionsMap;
     }
 
     private static Map<String,BiFunction<Double,Double,Double>> createBinaryOperatorsMap() {
         Map<String,BiFunction<Double,Double,Double>> binaryOperatorsMap = new HashMap<>();
-        binaryOperatorsMap.put("^", (a,b) -> Math.pow(a,b));
+        binaryOperatorsMap.put("^", Math::pow);
         binaryOperatorsMap.put(">=", (a,b) -> (a >= b) ? 1.0 : 0 );
         binaryOperatorsMap.put("<=", (a,b) -> (a <= b) ? 1.0 : 0);
         binaryOperatorsMap.put(">", (a,b) -> (a > b) ? 1.0 : 0 );
@@ -152,6 +141,15 @@ public class MathParser {
         binaryOperatorsMap.put("!=", (a,b) -> Double.compare(a,b) != 0 ? 1.0 : 0);
         binaryOperatorsMap.put("e", (a,b) -> a * Math.pow(10,b));
         return binaryOperatorsMap;
+    }
+
+    private Map<String, BiFunction<Double, Double, Double>> createBiFunctionsMap() {
+        Map<String, BiFunction<Double, Double, Double>> map = new HashMap<>();
+        map.put("max", Math::max);
+        map.put("min", Math::min);
+        map.put("hypot", Math::hypot);
+        map.put("log", (a, b) -> Math.log(a) / Math.log(b));
+        return map;
     }
 
     private boolean isDigit(final int ch){
@@ -164,7 +162,6 @@ public class MathParser {
 
     private boolean isSpecialOperator(final int ch){
         for(Map.Entry<String,BiFunction<Double,Double,Double>> entry: this.binaryOperatorsMap.entrySet()){
-            //System.out.println("(char)ch = " + (char)ch);
             if(entry.getKey().contains(String.valueOf((char)ch))){
                 return true;
             }
@@ -190,7 +187,6 @@ public class MathParser {
     private Expression parse(){
         nextCharacter();
         Expression result = parseExpression();
-        //System.out.println("result = " + result.evaluate());
         if(currentPosition < inputExpression.length()) throw new RuntimeException("Unexpected character: " +
                 (char)currentCharacter);
         return result;
@@ -260,7 +256,6 @@ public class MathParser {
             }
         } else if(isDigit(this.currentCharacter)){
             while (isDigit(this.currentCharacter)) nextCharacter();
-            //System.out.println("startPosition = " + startPosition + " this.currentPosition = " + this.currentPosition);
             double x = Double.parseDouble(this.inputExpression.substring(startPosition, this.currentPosition));
             //System.out.println("x = " + x);
             res = () -> x;

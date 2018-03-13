@@ -9,6 +9,7 @@ import static org.junit.Assert.assertEquals;
 
 /**
  * Created by igor on 10.03.18.
+ * Last edited 13.03.18
  */
 public class MathParserTest {
 
@@ -126,6 +127,7 @@ public class MathParserTest {
         assertEquals(Math.exp(-7), parser.parse("exp(-7)").evaluate(), EPS);
         assertEquals(Math.cosh(4), parser.parse("5e-1*(exp(4) + exp(-4))").evaluate(), EPS);
         assertEquals(Math.sinh(13), parser.parse("5e-1*(exp(13) - exp(-13))").evaluate(), EPS);
+        assertEquals(Math.exp(-4e2), parser.parse("exp(-4e2)").evaluate(), EPS);
     }
 
     @Test
@@ -142,6 +144,7 @@ public class MathParserTest {
     @Test
     public void trigonometricFunctionsTest() {
         assertEquals(0.5, parser.parse("sin(Pi/6)").evaluate(), EPS);
+        assertEquals(Math.sin(2 * Math.PI / 3), parser.parse("sin(2*Pi/3)").evaluate(), EPS);
         assertEquals(0.5, parser.parse("sin(5*Pi/6)").evaluate(), EPS);
         assertEquals(Math.sin(Math.PI / 4), parser.parse("sin(Pi/4)").evaluate(), EPS);
         assertEquals(0.5,parser.parse("cos(Pi/3)").evaluate(),  EPS);
@@ -192,9 +195,9 @@ public class MathParserTest {
 
     @Test
     public void hyperbolicArcFunctionsTest() {
-        assertEquals(0.14,parser.asinh(Math.sinh(0.14)),  EPS);
-        assertEquals(200, parser.acosh(Math.cosh(200)), EPS);
-        assertEquals(0.5, parser.atanh(Math.tanh(0.5)), EPS);
+        assertEquals(0.14, MathParser.asinh(Math.sinh(0.14)), EPS);
+        assertEquals(200, MathParser.acosh(Math.cosh(200)), EPS);
+        assertEquals(0.5, MathParser.atanh(Math.tanh(0.5)), EPS);
         assertEquals(5, parser.parse("arcsh(" + (Math.sinh(5)) + ")").evaluate(), EPS);
         assertEquals(7, parser.parse("arcch(" + (Math.cosh(7)) + ")").evaluate(), EPS);
         assertEquals(0.75, parser.parse("arcth(" + (Math.tanh(0.75)) + ")").evaluate(), EPS);
@@ -250,7 +253,7 @@ public class MathParserTest {
             assertEquals(x *x, parabola.evaluate(), EPS);
         }
 
-        parser.addFunction("degToRad", angle -> Math.toRadians(angle));
+        parser.addFunction("degToRad", Math::toRadians);
         parser.addVariable("angle", -2 * Math.PI);
         Expression sine = parser.parse("sin(degToRad(angle))");
         Expression cosine = parser.parse("cos(degToRad(angle))");
