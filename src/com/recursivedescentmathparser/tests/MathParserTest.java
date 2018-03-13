@@ -33,6 +33,7 @@ public class MathParserTest {
         assertEquals(-5, parser.parse("-5").evaluate(), EPS);
         assertEquals(5, parser.parse("+5").evaluate(), EPS);
         assertEquals(4, parser.parse("+++4").evaluate(), EPS);
+        assertEquals(4, parser.parse("--4").evaluate(), EPS);
     }
 
     @Test
@@ -55,6 +56,7 @@ public class MathParserTest {
     @Test
     public void subtractionTest() {
         assertEquals(8, parser.parse("10-2").evaluate(), EPS);
+        assertEquals(12, parser.parse("10--2").evaluate(), EPS);
         assertEquals(3001, parser.parse("3999 - 998").evaluate(), EPS);
         assertEquals(9, parser.parse("87 - 78").evaluate(), EPS);
         assertEquals(9e7 - 3e5, parser.parse("9e7 - 3e5").evaluate(), EPS);
@@ -117,6 +119,7 @@ public class MathParserTest {
         assertEquals(2, parser.parse("sqrt(4)").evaluate(), EPS);
         assertEquals(16, parser.parse("sqr(4)").evaluate(), EPS);
         assertEquals(27, parser.parse("cube(3)").evaluate(), EPS);
+        assertEquals(125, parser.parse("cube(5)").evaluate(), EPS);
         assertEquals(5, parser.parse("sqrt(sqr(3) + sqr(4))").evaluate(), EPS);
         assertEquals(10, parser.parse("sqrt(sqr(6) + sqr(8))").evaluate(), EPS);
     }
